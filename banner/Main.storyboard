@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Hw-bO-rW5">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -79,7 +78,7 @@
         <!--Middle TargetVC-->
         <scene sceneID="j63-FG-0Yo">
             <objects>
-                <viewController id="bXd-Wh-EjW" customClass="JXMiddleTargetVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bXd-Wh-EjW" customClass="JXMiddleTargetVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J70-4d-9R4"/>
                         <viewControllerLayoutGuide type="bottom" id="cGd-xf-jcp"/>
@@ -115,7 +114,7 @@
         <!--Cycle WayVC-->
         <scene sceneID="Kdj-Bg-Rap">
             <objects>
-                <viewController id="Lgi-rs-2FX" customClass="JXCycleWayVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Lgi-rs-2FX" customClass="JXCycleWayVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vFp-DZ-RLW"/>
                         <viewControllerLayoutGuide type="bottom" id="piv-qp-cSs"/>
@@ -134,7 +133,7 @@
         <!--DefaultVC-->
         <scene sceneID="9Kb-nV-3YA">
             <objects>
-                <viewController id="mqW-87-fvQ" customClass="JXDefaultVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mqW-87-fvQ" customClass="JXDefaultVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1mm-MI-9a2"/>
                         <viewControllerLayoutGuide type="bottom" id="cdT-tT-dWm"/>
@@ -188,7 +187,7 @@
         <!--CustomVC-->
         <scene sceneID="QUF-Ih-xoO">
             <objects>
-                <viewController id="x1l-6j-oSl" customClass="JXCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x1l-6j-oSl" customClass="JXCustomVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="etQ-To-Kas"/>
                         <viewControllerLayoutGuide type="bottom" id="Mzi-5q-bid"/>
@@ -207,7 +206,7 @@
         <!--Scroll ViewVC-->
         <scene sceneID="uPv-2g-BIe">
             <objects>
-                <viewController id="je1-oR-IBX" customClass="JXScrollViewVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="je1-oR-IBX" customClass="JXScrollViewVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7jd-kJ-3ir"/>
                         <viewControllerLayoutGuide type="bottom" id="W2r-t4-kqt"/>
@@ -243,7 +242,7 @@
         <!--Transform CustomVC-->
         <scene sceneID="7Yg-PF-t6T">
             <objects>
-                <viewController id="QIk-uN-nRW" customClass="JXTransformCustomVC" customModule="JXBanner_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QIk-uN-nRW" customClass="JXTransformCustomVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Em4-L0-rGs"/>
                         <viewControllerLayoutGuide type="bottom" id="LZ0-qY-Ia1"/>
