@@ -33,12 +33,12 @@ public class JXBanner: JXBaseBanner, JXBannerType {
     public weak var delegate: JXBannerDelegate?
     
     /// Outside of pageControl
-    internal var pageControl: (UIView & JXPageControlType)?
+    internal var pageControl_D: (UIView & JXPageControlType)?
     
     override func setCurrentIndex() {
         
         let currentPage = indexOfIndexPath(currentIndexPath)
-        pageControl?.currentPage = currentPage
+        pageControl_D?.currentPage = currentPage
         delegate?.jxBanner(self, center: currentPage)
 
         if let cell = collectionView.cellForItem(at: currentIndexPath) {
@@ -118,16 +118,16 @@ extension JXBanner {
     
     
     private func refreshPageControl() {
-        self.pageControl?.removeFromSuperview()
-        self.pageControl = nil
+        self.pageControl_D?.removeFromSuperview()
+        self.pageControl_D = nil
         if params.isShowPageControl {
             let pBuilder = dataSource?.jxBanner(pageControl: self,
                                                 numberOfPages: pageCount,
                                                 coverView: coverView,
                                                 builder: JXBannerPageControlBuilder())
             if let tempPageControl = pBuilder?.pageControl{
-                pageControl = tempPageControl
-                pageControl?.numberOfPages = pageCount
+                pageControl_D = tempPageControl
+                pageControl_D?.numberOfPages = pageCount
                 coverView.addSubview(tempPageControl)
             }
             if let layout = pBuilder?.layout {
