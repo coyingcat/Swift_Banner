@@ -121,19 +121,13 @@ extension JXCustomVC: JXBannerDataSource {
         -> JXBannerParams {
         
             if banner.indentify == "linearBanner" {
-                return params
-                    .timeInterval(2)
-                    .cycleWay(.forward)
+                return params.cycleWay(.forward)
          
             }else if banner.indentify == "converflowBanner" {
-                return params
-                    .timeInterval(3)
-                    .cycleWay(.forward)
+                return params.cycleWay(.forward)
            
             }else {
-                return params
-                    .timeInterval(3)
-                    .cycleWay(.forward)
+                return params.cycleWay(.forward)
               
             }
     }

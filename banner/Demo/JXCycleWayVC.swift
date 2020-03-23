@@ -95,13 +95,9 @@ extension JXCycleWayVC: JXBannerDataSource {
         -> JXBannerParams {
             
             if banner.indentify == "linearBanner" {
-                return params
-                    .timeInterval(5)
-                    .cycleWay(.rollingBack)
+                return params.cycleWay(.rollingBack)
             }else {
-                return params
-                    .timeInterval(10)
-                    .cycleWay(.skipEnd)
+                return params.cycleWay(.skipEnd)
             }
     }
     

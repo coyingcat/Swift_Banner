@@ -9,14 +9,13 @@
 import UIKit
 
 // MARK: - Property list
-public class JXBannerParams {    
+public class JXBannerParams {
     public var isBounces: Bool = true
-    
-
-    
     public var contentInset = UIEdgeInsets.zero
     
-    public var timeInterval: TimeInterval = 5.0
+    public var timeInterval: TimeInterval = 0.3
+    
+    // 5.0
     
     public var cycleWay: CycleWay = .forward
     
@@ -76,12 +75,6 @@ public extension JXBannerParams {
         return self
     }
     
-
-    
-    func timeInterval(_ timeInterval: TimeInterval) -> JXBannerParams {
-        self.timeInterval = timeInterval
-        return self
-    }
     
     func cycleWay(_ cycleWay: CycleWay) -> JXBannerParams {
         self.cycleWay = cycleWay

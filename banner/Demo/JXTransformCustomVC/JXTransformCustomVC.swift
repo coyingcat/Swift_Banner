@@ -68,9 +68,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
                   params: JXBannerParams)
         -> JXBannerParams {
             
-            return params
-                .timeInterval(3)
-                .cycleWay(.forward)
+            return params.cycleWay(.forward)
     }
     
     func banner(_ banner: JXBannerType,
