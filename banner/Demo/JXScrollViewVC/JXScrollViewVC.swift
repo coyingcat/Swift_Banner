@@ -61,7 +61,6 @@ extension JXScrollViewVC: JXBannerDataSource {
                   params: JXBannerParams) -> JXBannerParams {
         return params
             .isAutoPlay(false)
-            .isPagingEnabled(false)
             .cycleWay(.rollingBack)
             .contentInset(UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20))
     }

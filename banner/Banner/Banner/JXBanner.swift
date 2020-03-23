@@ -104,7 +104,7 @@ extension JXBanner {
             // params
             params = dataSource?.banner(self,
                                           params: params) ?? params
-            layout.isPagingEnabled = params.isPagingEnabled
+        
             collectionView.contentInset = params.contentInset
             
             // layoutParams

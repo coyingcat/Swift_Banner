@@ -15,7 +15,7 @@ public class JXBannerParams {
     
     public var isBounces: Bool = true
     
-    public var isPagingEnabled: Bool = true
+
     
     public var contentInset = UIEdgeInsets.zero
     
@@ -77,11 +77,7 @@ public extension JXBannerParams {
         return self
     }
     
-    func isPagingEnabled(_ isPagingEnabled: Bool) -> JXBannerParams {
-        self.isPagingEnabled = isPagingEnabled
-        return self
-    }
-    
+
     func contentInset(_ contentInset: UIEdgeInsets) -> JXBannerParams {
         self.contentInset = contentInset
         return self

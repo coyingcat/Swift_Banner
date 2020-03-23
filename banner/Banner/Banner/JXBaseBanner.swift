@@ -93,7 +93,7 @@ public class JXBaseBanner: UIView {
             UICollectionView(frame: self.bounds,
                              collectionViewLayout: self.layout)
         collectionView.backgroundColor = UIColor.clear
-        collectionView.isPagingEnabled = false
+    
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.autoresizingMask = [
@@ -190,7 +190,7 @@ extension JXBaseBanner {
             }
         }
         
-        if params.isPagingEnabled {
+ 
             
             // reuse scrollToItem: to mask the bug of inaccurate scroll position
             collectionView.scrollToItem(at: indexPath,
@@ -199,7 +199,7 @@ extension JXBaseBanner {
             collectionView.scrollToItem(at: indexPath,
                                         at: .centeredHorizontally,
                                         animated: animated)
-        }
+        
     }
     
     override public func willMove(toSuperview newSuperview: UIView?) {

@@ -28,7 +28,7 @@ class JXBannerLayout: UICollectionViewFlowLayout {
         }
     }
 
-    var isPagingEnabled: Bool = true
+ 
     
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) ->
         Bool {
@@ -41,13 +41,13 @@ class JXBannerLayout: UICollectionViewFlowLayout {
         scrollDirection = .horizontal
         
         // Set the margins
-        if isPagingEnabled {
+  
             let inset: CGFloat = (collectionView!.frame.width - itemSize.width) * 0.5
             sectionInset = UIEdgeInsets(top: 0,
                                         left: inset,
                                         bottom: 0,
                                         right: inset)
-        }
+        
 
     }
     
