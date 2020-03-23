@@ -33,14 +33,12 @@ public extension ConstraintView {
     @available(*, deprecated, message:"Use newer snp.* syntax.")
     var snp_left: ConstraintItem { return self.snp.left }
     
-    @available(*, deprecated, message:"Use newer snp.* syntax.")
-    var snp_top: ConstraintItem { return self.snp.top }
-    
+ 
     @available(*, deprecated, message:"Use newer snp.* syntax.")
     var snp_right: ConstraintItem { return self.snp.right }
     
-    @available(*, deprecated, message:"Use newer snp.* syntax.")
-    var snp_bottom: ConstraintItem { return self.snp.bottom }
+
+
     
     @available(*, deprecated, message:"Use newer snp.* syntax.")
     var snp_leading: ConstraintItem { return self.snp.leading }

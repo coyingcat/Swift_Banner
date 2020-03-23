@@ -28,7 +28,7 @@ class JXTransformCustomVC: UIViewController {
         banner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(200)
-            maker.top.equalTo(view.snp_top).offset(100)
+            maker.top.equalTo(view.snp.top).offset(100)
         }
 
         self.automaticallyAdjustsScrollViewInsets = false
@@ -97,7 +97,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
         builder.layout = {
             pageControl.snp.makeConstraints { (maker) in
                 maker.left.right.equalTo(coverView)
-                maker.top.equalTo(coverView.snp_bottom).offset(10)
+                maker.top.equalTo(coverView.snp.bottom).offset(10)
                 maker.height.equalTo(10)
             }
         }

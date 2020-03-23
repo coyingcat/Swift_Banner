@@ -52,18 +52,18 @@ class JXCustomVC: UIViewController {
         linearBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(view)
             maker.height.equalTo(150)
-            maker.top.equalTo(view.snp_top).offset(100)
+            maker.top.equalTo(view.snp.top).offset(100)
         }
         
         converflowBanner.snp.makeConstraints {(maker) in
             maker.left.right.height.equalTo(linearBanner)
-            maker.top.equalTo(linearBanner.snp_bottom).offset(50)
+            maker.top.equalTo(linearBanner.snp.bottom).offset(50)
         }
         
         customBanner.snp.makeConstraints {(maker) in
             maker.left.right.equalTo(linearBanner)
             maker.height.equalTo(200)
-            maker.top.equalTo(converflowBanner.snp_bottom).offset(50)
+            maker.top.equalTo(converflowBanner.snp.bottom).offset(50)
         }
         
         self.automaticallyAdjustsScrollViewInsets = false
@@ -186,7 +186,7 @@ extension JXCustomVC: JXBannerDataSource {
             builder.layout = {
                 pageControl.snp.makeConstraints { (maker) in
                     maker.left.right.equalTo(coverView)
-                    maker.top.equalTo(coverView.snp_bottom).offset(10)
+                    maker.top.equalTo(coverView.snp.bottom).offset(10)
                     maker.height.equalTo(20)
                 }
             }
@@ -204,7 +204,7 @@ extension JXCustomVC: JXBannerDataSource {
             builder.layout = {
                 pageControl.snp.makeConstraints { (maker) in
                     maker.left.right.equalTo(coverView)
-                    maker.top.equalTo(coverView.snp_bottom).offset(10)
+                    maker.top.equalTo(coverView.snp.bottom).offset(10)
                     maker.height.equalTo(20)
                 }
             }
