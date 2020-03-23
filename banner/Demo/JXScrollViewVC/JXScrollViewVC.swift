@@ -59,9 +59,7 @@ extension JXScrollViewVC: JXBannerDataSource {
     
     func banner(_ banner: JXBannerType,
                   params: JXBannerParams) -> JXBannerParams {
-        return params
-            .isAutoPlay(false)
-            .cycleWay(.rollingBack)
+        return params.cycleWay(.rollingBack)
             .contentInset(UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20))
     }
     

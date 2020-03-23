@@ -67,7 +67,6 @@ extension JXMiddleTargetVC: JXBannerDataSource {
     func banner(_ banner: JXBannerType,
                   params: JXBannerParams) -> JXBannerParams {
         return params
-        .isAutoPlay(false)
     }
     
     func banner(_ banner: JXBannerType,

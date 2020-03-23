@@ -9,10 +9,7 @@
 import UIKit
 
 // MARK: - Property list
-public class JXBannerParams {
-
-    public var isAutoPlay: Bool = true
-    
+public class JXBannerParams {    
     public var isBounces: Bool = true
     
 
@@ -67,11 +64,7 @@ public extension JXBannerParams {
 // MARK: - Set function
 public extension JXBannerParams {
     
-    func isAutoPlay(_ isAutoPlay: Bool) -> JXBannerParams {
-        self.isAutoPlay = isAutoPlay
-        return self
-    }
-    
+  
     func isBounces(_ isBounces: Bool) -> JXBannerParams {
         self.isBounces = isBounces
         return self

@@ -146,8 +146,7 @@ extension JXBaseBanner {
     }
     
     func start() {
-        if params.isAutoPlay,
-            params.timeInterval > 0,
+        if params.timeInterval > 0,
             pageCount > 1 {
             if timer == nil {
                 timer = Timer.jx_scheduledTimer(

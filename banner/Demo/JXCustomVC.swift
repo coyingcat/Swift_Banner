@@ -124,17 +124,17 @@ extension JXCustomVC: JXBannerDataSource {
                 return params
                     .timeInterval(2)
                     .cycleWay(.forward)
-                    .isAutoPlay(true)
+         
             }else if banner.indentify == "converflowBanner" {
                 return params
                     .timeInterval(3)
                     .cycleWay(.forward)
-                    .isAutoPlay(true)
+           
             }else {
                 return params
                     .timeInterval(3)
                     .cycleWay(.forward)
-                    .isAutoPlay(true)
+              
             }
     }
     
