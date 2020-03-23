@@ -146,10 +146,7 @@ public extension JXBannerDataSource {
                                    y: coverView.bounds.height - 24,
                                    width: coverView.bounds.width,
                                    height: 24)
-        pageControl.autoresizingMask = [
-            .flexibleWidth,
-            .flexibleTopMargin
-        ]
+   
         builder.pageControl = pageControl
         
         return builder
