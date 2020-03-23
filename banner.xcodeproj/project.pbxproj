@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,7 +21,7 @@
 		2614BD2B2424A63600E9EDF8 /* mp4_3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2614BD052424A63600E9EDF8 /* mp4_3.jpg */; };
 		2614BD2C2424A63600E9EDF8 /* mp4_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2614BD062424A63600E9EDF8 /* mp4_2.jpg */; };
 		2614BD2D2424A63600E9EDF8 /* mp4_4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2614BD072424A63600E9EDF8 /* mp4_4.jpg */; };
-		2614BD2E2424A63600E9EDF8 /* JXDefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614BD092424A63600E9EDF8 /* JXDefaultVC.swift */; };
+		2614BD2E2424A63600E9EDF8 /* DefaultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614BD092424A63600E9EDF8 /* DefaultVC.swift */; };
 		2614BD2F2424A63600E9EDF8 /* JXMiddleTargetCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2614BD0B2424A63600E9EDF8 /* JXMiddleTargetCell.xib */; };
 		2614BD302424A63600E9EDF8 /* JXMiddleTargetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614BD0C2424A63600E9EDF8 /* JXMiddleTargetCell.swift */; };
 		2614BD312424A63600E9EDF8 /* JXMiddleTargetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614BD0D2424A63600E9EDF8 /* JXMiddleTargetVC.swift */; };
@@ -120,7 +120,7 @@
 		2614BD052424A63600E9EDF8 /* mp4_3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_3.jpg; sourceTree = "<group>"; };
 		2614BD062424A63600E9EDF8 /* mp4_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_2.jpg; sourceTree = "<group>"; };
 		2614BD072424A63600E9EDF8 /* mp4_4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mp4_4.jpg; sourceTree = "<group>"; };
-		2614BD092424A63600E9EDF8 /* JXDefaultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXDefaultVC.swift; sourceTree = "<group>"; };
+		2614BD092424A63600E9EDF8 /* DefaultVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultVC.swift; sourceTree = "<group>"; };
 		2614BD0B2424A63600E9EDF8 /* JXMiddleTargetCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JXMiddleTargetCell.xib; sourceTree = "<group>"; };
 		2614BD0C2424A63600E9EDF8 /* JXMiddleTargetCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetCell.swift; sourceTree = "<group>"; };
 		2614BD0D2424A63600E9EDF8 /* JXMiddleTargetVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JXMiddleTargetVC.swift; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		2614BD082424A63600E9EDF8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				2614BD092424A63600E9EDF8 /* JXDefaultVC.swift */,
+				2614BD092424A63600E9EDF8 /* DefaultVC.swift */,
 				2614BD0A2424A63600E9EDF8 /* JXMiddleTargetVC */,
 				2614BD0E2424A63600E9EDF8 /* JXCycleWayVC.swift */,
 				2614BD0F2424A63600E9EDF8 /* JXScrollViewVC */,
@@ -482,7 +482,6 @@
 				4C5C0F6927EB671A82159CAE /* Pods-bannerUITests.debug.xcconfig */,
 				0055C8F8DE5DAB2DBEC908F6 /* Pods-bannerUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -748,7 +747,7 @@
 				2614BD8A2424A88500E9EDF8 /* JXPageControlExchange.swift in Sources */,
 				2614BD762424A72000E9EDF8 /* JXBanner.swift in Sources */,
 				2614BD8D2424A88500E9EDF8 /* JXPageControlType.swift in Sources */,
-				2614BD2E2424A63600E9EDF8 /* JXDefaultVC.swift in Sources */,
+				2614BD2E2424A63600E9EDF8 /* DefaultVC.swift in Sources */,
 				2614BD322424A63600E9EDF8 /* JXCycleWayVC.swift in Sources */,
 				2614BD8F2424A88500E9EDF8 /* JXPageControlJump.swift in Sources */,
 				2614BD342424A63600E9EDF8 /* JXScrollViewCell.swift in Sources */,

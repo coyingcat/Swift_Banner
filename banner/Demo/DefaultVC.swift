@@ -1,5 +1,5 @@
 //
-//  JXDefaultVC.swift
+//  DefaultVC.swift
 //  JXBanner_Example
 //
 //  Created by Coder_TanJX on 2019/7/30.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-class JXDefaultVC: UIViewController {
+class DefaultVC: UIViewController {
     
     var pageCount = 5
 
@@ -34,7 +34,7 @@ class JXDefaultVC: UIViewController {
 }
 
 //MARK:- JXBannerDataSource
-extension JXDefaultVC: JXBannerDataSource {
+extension DefaultVC: JXBannerDataSource {
     
     func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
@@ -68,7 +68,7 @@ extension JXDefaultVC: JXBannerDataSource {
 }
 
 //MARK:- JXBannerDelegate
-extension JXDefaultVC: JXBannerDelegate {
+extension DefaultVC: JXBannerDelegate {
     
     public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {

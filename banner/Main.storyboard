@@ -133,7 +133,7 @@
         <!--DefaultVC-->
         <scene sceneID="9Kb-nV-3YA">
             <objects>
-                <viewController id="mqW-87-fvQ" customClass="JXDefaultVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mqW-87-fvQ" customClass="DefaultVC" customModule="banner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1mm-MI-9a2"/>
                         <viewControllerLayoutGuide type="bottom" id="cdT-tT-dWm"/>
