@@ -73,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPM-Jm-ZXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="777" y="-1064"/>
+            <point key="canvasLocation" x="222" y="-1025"/>
         </scene>
         <!--Middle TargetVC-->
         <scene sceneID="j63-FG-0Yo">
@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kae-Ys-1CG" customClass="JXBanner" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kae-Ys-1CG" customClass="JXBanner" customModule="banner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="144" width="375" height="200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -109,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T5h-5R-eB5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="-337"/>
+            <point key="canvasLocation" x="543" y="-79"/>
         </scene>
         <!--Cycle WayVC-->
         <scene sceneID="Kdj-Bg-Rap">
@@ -182,7 +182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dwD-mA-bSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48.799999999999997" y="-1045.7271364317842"/>
+            <point key="canvasLocation" x="-534" y="-1025"/>
         </scene>
         <!--CustomVC-->
         <scene sceneID="QUF-Ih-xoO">

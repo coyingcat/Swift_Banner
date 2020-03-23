@@ -85,7 +85,7 @@ import UIKit
     
     /// Inactive item tint color
     @IBInspectable public var inactiveColor: UIColor =
-        UIColor.groupTableViewBackground.withAlphaComponent(0.5) {
+        UIColor.gray{
         didSet { inactiveHollowLayout() }
     }
     
