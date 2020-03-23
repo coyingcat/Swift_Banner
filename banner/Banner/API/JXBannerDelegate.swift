@@ -17,7 +17,7 @@ public protocol JXBannerDelegate: class {
      - index: The index of the cell is clicked
      */
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                       didSelectItemAt index: Int)
     
     /**
@@ -28,7 +28,7 @@ public protocol JXBannerDelegate: class {
      - index: the index of the item in the middle of the bannerview
      */
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   center index: Int)
     
     /**
@@ -39,21 +39,21 @@ public protocol JXBannerDelegate: class {
      - coverView: This is a view to add mask subview
      */
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   coverView: UIView)
 }
 
 /// The default implementation
 public extension JXBannerDelegate {
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                       didSelectItemAt index: Int) {
         print(" -- jxBanner select item -- \(index)  -- ")
     }
 
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   center index: Int) {}
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   coverView: UIView) {}
 }

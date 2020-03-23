@@ -35,17 +35,17 @@ class JXScrollViewVC: UIViewController {
 //MARK:- JXBannerDataSource
 extension JXScrollViewVC: JXBannerDataSource {
     
-    func jxBanner(_ banner: JXBannerType)
+    func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             return JXBannerCellRegister(type: nil,
                                         reuseIdentifier: "JXScrollViewCell",
                                         nib: UINib(nibName: "JXScrollViewCell", bundle: Bundle.main))
     }
     
-    func jxBanner(numberOfItems banner: JXBannerType)
+    func banner(numberOfItems banner: JXBannerType)
         -> Int { return pageCount }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
@@ -57,7 +57,7 @@ extension JXScrollViewVC: JXBannerDataSource {
             return cell
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   params: JXBannerParams) -> JXBannerParams {
         return params
             .isAutoPlay(false)
@@ -67,7 +67,7 @@ extension JXScrollViewVC: JXBannerDataSource {
             .contentInset(UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20))
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
         return layoutParams
@@ -79,7 +79,7 @@ extension JXScrollViewVC: JXBannerDataSource {
 //MARK:- JXBannerDelegate
 extension JXScrollViewVC: JXBannerDelegate {
     
-    public func jxBanner(_ banner: JXBannerType,
+    public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }

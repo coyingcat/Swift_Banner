@@ -77,7 +77,7 @@ class JXCustomVC: UIViewController {
 //MARK:- JXBannerDataSource
 extension JXCustomVC: JXBannerDataSource {
     
-    func jxBanner(_ banner: JXBannerType)
+    func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
 
             if banner.indentify == "linearBanner" {
@@ -92,10 +92,10 @@ extension JXCustomVC: JXBannerDataSource {
             }
     }
     
-    func jxBanner(numberOfItems banner: JXBannerType)
+    func banner(numberOfItems banner: JXBannerType)
         -> Int { return pageCount }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
@@ -116,7 +116,7 @@ extension JXCustomVC: JXBannerDataSource {
             return tempCell
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   params: JXBannerParams)
         -> JXBannerParams {
         
@@ -138,7 +138,7 @@ extension JXCustomVC: JXBannerDataSource {
             }
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             
@@ -168,7 +168,7 @@ extension JXCustomVC: JXBannerDataSource {
             }
     }
     
-    func jxBanner(pageControl banner: JXBannerType,
+    func bannerD(pageControl banner: JXBannerType,
                   numberOfPages: Int,
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
@@ -218,12 +218,12 @@ extension JXCustomVC: JXBannerDataSource {
 //MARK:- JXBannerDelegate
 extension JXCustomVC: JXBannerDelegate {
     
-    public func jxBanner(_ banner: JXBannerType,
+    public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }
     
-    func jxBanner(_ banner: JXBannerType, coverView: UIView) {
+    func banner(_ banner: JXBannerType, coverView: UIView) {
         let title = UILabel()
         title.frame = CGRect(x: 0, y: 0, width: 100, height: 30)
         title.text = "JXBanner"
@@ -232,7 +232,7 @@ extension JXCustomVC: JXBannerDelegate {
         coverView.addSubview(title)
     }
     
-    func jxBanner(_ banner: JXBannerType, center index: Int) {
+    func banner(_ banner: JXBannerType, center index: Int) {
         print(index)
     }
     

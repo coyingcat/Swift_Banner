@@ -39,13 +39,13 @@ public class JXBanner: JXBaseBanner, JXBannerType {
         
         let currentPage = indexOfIndexPath(currentIndexPath)
         pageControl_D?.currentPage = currentPage
-        delegate?.jxBanner(self, center: currentPage)
+        delegate?.banner(self, center: currentPage)
 
         if let cell = collectionView.cellForItem(at: currentIndexPath) {
-            dataSource?.jxBanner(self,
+            dataSource?.banner(self,
                                  lastCenterIndex: lastCenterIndex,
                                  lastCenterCell: lastIndexPathCell)
-            dataSource?.jxBanner(self,
+            dataSource?.banner(self,
                                  centerIndex: currentPage,
                                  centerCell: cell)
             lastCenterIndex = currentPage
@@ -75,11 +75,11 @@ extension JXBanner {
     private func refreshDataSource() {
         
         // DataSource
-        if let _ = dataSource?.jxBanner(numberOfItems: self),
+        if let _ = dataSource?.banner(numberOfItems: self),
             let tempDataSource = dataSource {
             
             // Register cell
-            if let register = dataSource?.jxBanner(self) {
+            if let register = dataSource?.banner(self) {
                 
                 if let nib = register.nib {
                     collectionView.register(
@@ -99,16 +99,16 @@ extension JXBanner {
             }
             
             // numberOfItems
-            pageCount = tempDataSource.jxBanner(numberOfItems: self)
+            pageCount = tempDataSource.banner(numberOfItems: self)
             
             // params
-            params = dataSource?.jxBanner(self,
+            params = dataSource?.banner(self,
                                           params: params) ?? params
             layout.isPagingEnabled = params.isPagingEnabled
             collectionView.contentInset = params.contentInset
             
             // layoutParams
-            layout.params = tempDataSource.jxBanner(self,
+            layout.params = tempDataSource.banner(self,
                                                     layoutParams: layout.params!)
             
             // PageControl
@@ -121,7 +121,7 @@ extension JXBanner {
         self.pageControl_D?.removeFromSuperview()
         self.pageControl_D = nil
         if params.isShowPageControl {
-            let pBuilder = dataSource?.jxBanner(pageControl: self,
+            let pBuilder = dataSource?.bannerD(pageControl: self,
                                                 numberOfPages: pageCount,
                                                 coverView: coverView,
                                                 builder: JXBannerPageControlBuilder())
@@ -139,14 +139,14 @@ extension JXBanner {
     private func refreshDelegate() {
         // Dalegate
         if let tempDelegate = delegate {
-            tempDelegate.jxBanner(self, coverView: coverView)
+            tempDelegate.banner(self, coverView: coverView)
         }
     }
     
     private func refreshData() {
         
         if let cell = lastIndexPathCell {
-            dataSource?.jxBanner(self,
+            dataSource?.banner(self,
                                  lastCenterIndex: lastCenterIndex,
                                  lastCenterCell: cell)
             lastCenterIndex = nil
@@ -365,7 +365,7 @@ UICollectionViewDelegate {
             let cell = collectionView.dequeueReusableCell(
                 withReuseIdentifier: cellRegister.reuseIdentifier,
                 for: indexPath)
-            return dataSource?.jxBanner(self,
+            return dataSource?.banner(self,
                                         cellForItemAt: indexOfIndexPath(indexPath),
                                         cell: cell) ?? cell
     }
@@ -373,7 +373,7 @@ UICollectionViewDelegate {
     
     public func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-        delegate?.jxBanner(self,
+        delegate?.banner(self,
                            didSelectItemAt: indexOfIndexPath(indexPath))
         indexPathErrorDetection()
     }

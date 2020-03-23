@@ -42,17 +42,17 @@ class JXTransformCustomVC: UIViewController {
 //MARK:- JXBannerDataSource
 extension JXTransformCustomVC: JXBannerDataSource {
     
-    func jxBanner(_ banner: JXBannerType)
+    func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             
             return JXBannerCellRegister(type: JXBannerCell.self,
                                         reuseIdentifier: "JXTransformCustomVCCell")
     }
     
-    func jxBanner(numberOfItems banner: JXBannerType)
+    func banner(numberOfItems banner: JXBannerType)
         -> Int { return pageCount }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
@@ -64,7 +64,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
             return tempCell
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   params: JXBannerParams)
         -> JXBannerParams {
             
@@ -73,7 +73,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
                 .cycleWay(.forward)
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             
@@ -84,7 +84,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
                 .itemSpacing(10)
     }
     
-    func jxBanner(pageControl banner: JXBannerType,
+    func bannerD(pageControl banner: JXBannerType,
                   numberOfPages: Int,
                   coverView: UIView,
                   builder: JXBannerPageControlBuilder) -> JXBannerPageControlBuilder {
@@ -110,7 +110,7 @@ extension JXTransformCustomVC: JXBannerDataSource {
 //MARK:- JXBannerDelegate
 extension JXTransformCustomVC: JXBannerDelegate {
     
-    public func jxBanner(_ banner: JXBannerType,
+    public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }

@@ -36,16 +36,16 @@ class JXDefaultVC: UIViewController {
 //MARK:- JXBannerDataSource
 extension JXDefaultVC: JXBannerDataSource {
     
-    func jxBanner(_ banner: JXBannerType)
+    func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             return JXBannerCellRegister(type: JXBannerCell.self,
                                         reuseIdentifier: "JXDefaultVCCell")
     }
     
-    func jxBanner(numberOfItems banner: JXBannerType)
+    func banner(numberOfItems banner: JXBannerType)
         -> Int { return pageCount }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
@@ -57,7 +57,7 @@ extension JXDefaultVC: JXBannerDataSource {
             return tempCell
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
         return layoutParams
@@ -70,12 +70,12 @@ extension JXDefaultVC: JXBannerDataSource {
 //MARK:- JXBannerDelegate
 extension JXDefaultVC: JXBannerDelegate {
     
-    public func jxBanner(_ banner: JXBannerType,
+    public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }
     
-    func jxBanner(_ banner: JXBannerType, center index: Int) {
+    func banner(_ banner: JXBannerType, center index: Int) {
         print(index)
     }
     

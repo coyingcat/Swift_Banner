@@ -43,17 +43,17 @@ class JXMiddleTargetVC: UIViewController {
 //MARK:- JXBannerDataSource
 extension JXMiddleTargetVC: JXBannerDataSource {
     
-    func jxBanner(_ banner: JXBannerType)
+    func banner(_ banner: JXBannerType)
         -> (JXBannerCellRegister) {
             return JXBannerCellRegister(type: nil,
                                         reuseIdentifier: "JXMiddleTargetCell",
                                         nib: UINib(nibName: "JXMiddleTargetCell", bundle: Bundle.main))
     }
     
-    func jxBanner(numberOfItems banner: JXBannerType)
+    func banner(numberOfItems banner: JXBannerType)
         -> Int { return pageCount }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   cellForItemAt index: Int,
                   cell: UICollectionViewCell)
         -> UICollectionViewCell {
@@ -64,13 +64,13 @@ extension JXMiddleTargetVC: JXBannerDataSource {
             return tempCell
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   params: JXBannerParams) -> JXBannerParams {
         return params
         .isAutoPlay(false)
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   layoutParams: JXBannerLayoutParams)
         -> JXBannerLayoutParams {
             return layoutParams
@@ -79,7 +79,7 @@ extension JXMiddleTargetVC: JXBannerDataSource {
                 .layoutType(JXBannerTransformLinear())
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   centerIndex: Int,
                   centerCell: UICollectionViewCell) {
         
@@ -91,7 +91,7 @@ extension JXMiddleTargetVC: JXBannerDataSource {
         }
     }
     
-    func jxBanner(_ banner: JXBannerType,
+    func banner(_ banner: JXBannerType,
                   lastCenterIndex: Int?,
                   lastCenterCell: UICollectionViewCell?) {
         
@@ -107,12 +107,12 @@ extension JXMiddleTargetVC: JXBannerDataSource {
 //MARK:- JXBannerDelegate
 extension JXMiddleTargetVC: JXBannerDelegate {
     
-    public func jxBanner(_ banner: JXBannerType,
+    public func banner(_ banner: JXBannerType,
                          didSelectItemAt index: Int) {
         print(index)
     }
     
-    func jxBanner(_ banner: JXBannerType, center index: Int) {
+    func banner(_ banner: JXBannerType, center index: Int) {
         print(index)
     }
     
