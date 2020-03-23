@@ -21,7 +21,7 @@ class JXScrollViewVC: UIViewController {
         scrollView.delegate = self
         scrollView.dataSource = self
         
-        self.automaticallyAdjustsScrollViewInsets = false
+      
     }
     
     deinit {

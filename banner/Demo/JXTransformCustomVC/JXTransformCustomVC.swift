@@ -31,7 +31,7 @@ class JXTransformCustomVC: UIViewController {
             maker.top.equalTo(view.snp.top).offset(100)
         }
 
-        self.automaticallyAdjustsScrollViewInsets = false
+        
     }
     
     deinit {

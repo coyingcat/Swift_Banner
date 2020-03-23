@@ -47,7 +47,7 @@ class JXCycleWayVC: UIViewController {
             maker.top.equalTo(linearBanner.snp.bottom).offset(100)
         }
         
-        self.automaticallyAdjustsScrollViewInsets = false
+    
     }
     
     deinit {

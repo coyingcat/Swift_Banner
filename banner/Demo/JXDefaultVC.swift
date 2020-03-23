@@ -21,7 +21,7 @@ class JXDefaultVC: UIViewController {
         banner.delegate = self
         banner.dataSource = self
         
-        self.automaticallyAdjustsScrollViewInsets = false
+
     }
     
     deinit {

@@ -28,7 +28,7 @@ class JXMiddleTargetVC: UIViewController {
         banner.delegate = self
         banner.dataSource = self
         
-        self.automaticallyAdjustsScrollViewInsets = false
+       
     }
     
     deinit {

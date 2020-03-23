@@ -66,7 +66,7 @@ class JXCustomVC: UIViewController {
             maker.top.equalTo(converflowBanner.snp.bottom).offset(50)
         }
         
-        self.automaticallyAdjustsScrollViewInsets = false
+   
     }
     
     deinit {
