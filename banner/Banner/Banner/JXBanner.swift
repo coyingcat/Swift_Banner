@@ -120,7 +120,7 @@ extension JXBanner {
     private func refreshPageControl() {
         self.pageControl_D?.removeFromSuperview()
         self.pageControl_D = nil
-        if params.isShowPageControl {
+      
             let pBuilder = dataSource?.bannerD(pageControl: self,
                                                 numberOfPages: pageCount,
                                                 coverView: coverView,
@@ -133,7 +133,7 @@ extension JXBanner {
             if let layout = pBuilder?.layout {
                 layout()
             }
-        }
+        
     }
     
     private func refreshDelegate() {
