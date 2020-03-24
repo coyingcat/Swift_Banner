@@ -1,5 +1,5 @@
 //
-//  JXBannerBaseCell.swift
+//  JXBannerCell.swift
 //  JXBanner_Example
 //
 //  Created by Code_JX on 2019/5/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class JXBannerBaseCell: UICollectionViewCell {
+open class JXBannerCell: UICollectionViewCell {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)

@@ -86,7 +86,7 @@ extension JXCycleWayVC: JXBannerDataSource {
                 tempCell.imageView.image = UIImage(named: "\(index+5).jpg")
             }
             
-            tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
+
             return tempCell
     }
     

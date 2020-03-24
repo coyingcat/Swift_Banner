@@ -60,7 +60,6 @@ extension JXTransformCustomVC: JXBannerDataSource {
             tempCell.layer.cornerRadius = 8
             tempCell.layer.masksToBounds = true
             tempCell.imageView.image = UIImage(named: "\(index).jpg")
-            tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
             return tempCell
     }
     

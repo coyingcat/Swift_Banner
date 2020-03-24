@@ -111,8 +111,7 @@ extension JXCustomVC: JXBannerDataSource {
             }else {
                 tempCell.imageView.image = UIImage(named: "\(index+10).jpg")
             }
-            
-            tempCell.msgLabel.text = String(index) + "---来喽来喽,他真的来喽~"
+          
             return tempCell
     }
     
