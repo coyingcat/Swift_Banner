@@ -66,8 +66,7 @@ public protocol JXPageControlType {
     /// Column spacing
     var columnSpacing: CGFloat { get set }
     
-    /// Content location
-    var contentAlignment: JXPageControlAlignment { get set }
+  
     
     /// The content location of the system UIView
     var contentMode: UIView.ContentMode { get set }

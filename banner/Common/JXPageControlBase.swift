@@ -24,36 +24,7 @@ import UIKit
         addSubview(contentView)
     }
     
-    open override var contentMode: UIView.ContentMode {
-        didSet {
-            switch contentMode {
-                
-            case .center:
-                contentAlignment = JXPageControlAlignment(.center, .center)
-            case .left:
-                contentAlignment = JXPageControlAlignment(.left, .center)
-            case .right:
-                contentAlignment = JXPageControlAlignment(.right, .center)
-                
-            case .bottom:
-                contentAlignment = JXPageControlAlignment(.center, .bottom)
-            case .bottomLeft:
-                contentAlignment = JXPageControlAlignment(.left, .bottom)
-            case .bottomRight:
-                contentAlignment = JXPageControlAlignment(.right, .bottom)
-                
-            case .top:
-                contentAlignment = JXPageControlAlignment(.center, .top)
-            case .topLeft:
-                contentAlignment = JXPageControlAlignment(.left, .top)
-            case .topRight:
-                contentAlignment = JXPageControlAlignment(.right, .top)
-                
-            default:
-                contentAlignment = JXPageControlAlignment(.center, .center)
-            }
-        }
-    }
+   
     
     open override func layoutSubviews() {
         super.layoutSubviews()
@@ -143,13 +114,7 @@ import UIKit
         didSet { activeHollowLayout() }
     }
     
-    /// Content location
-    public var contentAlignment: JXPageControlAlignment =
-        JXPageControlAlignment(.center,
-                               .center) {
-        didSet { reloadLayout()
-            updateProgress(CGFloat(currentIndex)) }
-    }
+   
     
     /// Refresh the data and UI again
     public func reload() {
@@ -249,30 +214,16 @@ import UIKit
         maxIndicatorSize.width = itemWidth
         
         // Content Size and frame
-        var x: CGFloat = 0
-        var y: CGFloat = 0
+        
+        
         let width = CGFloat(numberOfPages) * (itemWidth + columnSpacing) - columnSpacing
         let height = itemHeight
         
-        // Horizon layout
-        switch contentAlignment.horizon {
-        case .left:
-            x = 0
-        case .right:
-            x = (frame.width - width)
-        case .center:
-            x = (frame.width - width) * 0.5
-        }
+       
+        let x: CGFloat = (frame.width - width) * 0.5
         
-        // Vertical layout
-        switch contentAlignment.vertical {
-        case .top:
-            y = 0
-        case .bottom:
-            y = frame.height - height
-        case .center:
-            y = (frame.height - height) * 0.5
-        }
+        let y: CGFloat = frame.height - height
+       
         
         contentView.frame = CGRect(x: x,
                                    y: y,

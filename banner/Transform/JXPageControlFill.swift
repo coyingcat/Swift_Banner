@@ -136,30 +136,15 @@ import CoreGraphics
     // MARK: - -------------------------- Layout --------------------------
     override func layoutContentView() {
         
-        var x: CGFloat = 0
-        var y: CGFloat = 0
+        
+        
         let width = CGFloat(numberOfPages) * (actualDiameter + columnSpacing) - columnSpacing
         let height = actualDiameter
 
-        // Horizon layout
-        switch contentAlignment.horizon {
-        case .left:
-            x = 0
-        case .right:
-            x = (frame.width - width)
-        case .center:
-            x = (frame.width - width) * 0.5
-        }
+        let x: CGFloat = (frame.width - width) * 0.5
         
-        // Vertical layout
-        switch contentAlignment.vertical {
-        case .top:
-            y = 0
-        case .bottom:
-            y = frame.height - height
-        case .center:
-            y = (frame.height - height) * 0.5
-        }
+        let y: CGFloat = frame.height - height
+        
         contentView.frame = CGRect(x: x,
                                    y: y,
                                    width: width,
